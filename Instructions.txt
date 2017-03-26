@@ -1,0 +1,45 @@
+Instructions to install Flask on Windows
+
+- Install Virtual environment by running the below commands. Ensure Python is installed and pip is installed.
+pip install virtualenv
+venv\Scripts\activate
+
+- Install flask
+pip install flask
+
+- Install heroku for windows from site: https://devcenter.heroku.com/articles/heroku-cli, you need to create heroku login as well.
+
+- Check if heroku is installed by running the command below
+heroku --version
+
+- Login to heroku by running the command below and enter username and password
+heroku login
+
+- Run the following commands to create the necessary folders
+mkdir static
+cd static
+mkdir css
+mkdir js
+mkdir img
+cd ..
+mkdir templates
+routes.py
+
+cd templates
+echo.>index.html
+echo.>layouts.html
+
+- To start the server run routes.py
+python routes.py
+
+Deploying to heroku
+pip install gunicorn
+pip freeze>requirements.txt
+echo.>Procfile
+
+- Create a new subdomain in Heroku by running the command below
+heroku create
+git push
+git push heroku master
+
+heroku open
