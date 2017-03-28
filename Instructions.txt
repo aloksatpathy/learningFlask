@@ -43,3 +43,12 @@ git push
 git push heroku master
 
 heroku open
+
+- Install sqlalchemy
+pip install flask-sqlalchemy
+
+- Install flask-wtf
+pip install flask-wtf
+
+pip install 
+root:h1bded0$mujhe@
